@@ -65,10 +65,10 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-                // Show Alert
-                Toast.makeText(getApplicationContext(),
-                        "Position :"+position+"  ListItem : " +itemValue , Toast.LENGTH_LONG)
-                        .show();
+                // Show Alert for debuging
+//                Toast.makeText(getApplicationContext(),
+//                        "Position :"+position+"  ListItem : " +itemValue , Toast.LENGTH_LONG)
+//                        .show();
 
             }
 
