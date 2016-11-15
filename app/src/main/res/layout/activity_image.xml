@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_image"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.youduan.bacaan.ImageActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="5"
+        android:id="@+id/card">
+
+        <ImageView
+            android:layout_width="128dp"
+            app:srcCompat="@drawable/us"
+            android:id="@+id/us"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="234dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="234dp"
+            app:srcCompat="@drawable/us2"
+            android:id="@+id/us2"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="128dp"
+            app:srcCompat="@drawable/us3"
+            android:id="@+id/us3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="234dp"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_weight="4"
+            android:id="@+id/data"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:text="Perkenalkan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:text="Cowo:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:text="Nama : Anton Effendi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" />
+
+            <TextView
+                android:text="Cewe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4" />
+
+            <TextView
+                android:text="Indah Fajarwati"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxBack"
+        android:layout_weight="1"
+        android:layout_below="@+id/card"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:text="Prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkBoxBack"
+        android:layout_toRightOf="@+id/checkBoxBack"
+        android:layout_toEndOf="@+id/checkBoxBack"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:id="@+id/previous" />
+
+    <Button
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/previous"
+        android:layout_toRightOf="@+id/previous"
+        android:layout_toEndOf="@+id/previous"
+        android:id="@+id/next" />
+
+</RelativeLayout>
